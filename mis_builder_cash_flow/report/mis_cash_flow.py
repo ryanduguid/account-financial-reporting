@@ -63,16 +63,17 @@ class MisCashFlow(models.Model):
                 'move_line' as line_type,
                 aml.id as move_line_id,
                 aml.account_id as account_id,
-                CASE
-                    WHEN aml.amount_residual > 0
-                    THEN aml.amount_residual
-                    ELSE 0.0
-                END AS debit,
-                CASE
-                    WHEN aml.amount_residual < 0
-                    THEN -aml.amount_residual
-                    ELSE 0.0
-                END AS credit,
+                -- Cash uses ledger balances; open items use residuals.
+                GREATEST(CASE
+                    WHEN aa.account_type IN ('asset_cash', 'liability_credit_card')
+                    THEN aml.balance
+                    ELSE aml.amount_residual
+                END, 0.0) AS debit,
+                GREATEST(-CASE
+                    WHEN aa.account_type IN ('asset_cash', 'liability_credit_card')
+                    THEN aml.balance
+                    ELSE aml.amount_residual
+                END, 0.0) AS credit,
                 aml.reconciled as reconciled,
                 aml.full_reconcile_id as full_reconcile_id,
                 aml.partner_id as partner_id,
@@ -81,6 +82,7 @@ class MisCashFlow(models.Model):
                 aml.parent_state as parent_state,
                 COALESCE(aml.date_maturity, aml.date) as date
             FROM account_move_line as aml
+            JOIN account_account as aa ON aa.id = aml.account_id
             WHERE aml.parent_state != 'cancel'
             UNION ALL
             SELECT

@@ -38,7 +38,7 @@ class TestCashFlow(TransactionCase):
                 "company_ids": [(6, 0, [self.company.id])],
                 "code": "TEST3",
                 "name": "Account",
-                "account_type": "asset_cash",
+                "account_type": "asset_receivable",
                 "reconcile": True,
             }
         )
@@ -112,6 +112,8 @@ class TestCashFlow(TransactionCase):
                         0,
                         {
                             "account_id": self.account.id,
+                            "partner_id": self.company.partner_id.id,
+                            "date_maturity": Date.today(),
                             "debit": 0,
                             "credit": 2000,
                             "company_id": self.company.id,
