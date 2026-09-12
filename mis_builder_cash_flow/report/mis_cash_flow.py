@@ -10,6 +10,31 @@ class MisCashFlow(models.Model):
     _description = "MIS Cash Flow"
     _auto = False
 
+    _depends = {
+        "account.account": ["account_type"],
+        "account.move.line": [
+            "account_id",
+            "amount_residual",
+            "balance",
+            "reconciled",
+            "full_reconcile_id",
+            "partner_id",
+            "company_id",
+            "name",
+            "parent_state",
+            "date_maturity",
+            "date",
+        ],
+        "mis.cash_flow.forecast_line": [
+            "account_id",
+            "balance",
+            "partner_id",
+            "company_id",
+            "name",
+            "date",
+        ],
+    }
+
     line_type = fields.Selection(
         [("forecast_line", "Forecast Line"), ("move_line", "Journal Item")],
         index=True,

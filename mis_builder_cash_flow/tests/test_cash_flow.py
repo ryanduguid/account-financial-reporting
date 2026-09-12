@@ -14,7 +14,9 @@ class TestCashFlow(TransactionCase):
     def setUp(self):
         super().setUp()
         self.company = self.env["res.company"].create({"name": "TEST"})
-        self.report = self.browse_ref("mis_builder_cash_flow.mis_instance_cash_flow")
+        self.report = self.browse_ref(
+            "mis_builder_cash_flow.mis_instance_cash_flow"
+        ).with_company(self.company)
         self.report.company_id = self.company
         self.bank_account = self.env["account.account"].create(
             {
