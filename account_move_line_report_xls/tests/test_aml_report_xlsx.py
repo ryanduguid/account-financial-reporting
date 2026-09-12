@@ -1,10 +1,12 @@
 # Copyright 2009-2020 Noviat.
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo import Command
+from odoo.tests import tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
 
+@tagged("post_install", "-at_install")
 class TestAmlReportXlsx(AccountTestInvoicingCommon):
     @classmethod
     def setUpClass(cls):
