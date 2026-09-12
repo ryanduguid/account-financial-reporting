@@ -8,6 +8,7 @@ on:
     branches:
       - "18.0"
       - "18.0-ocabot-*"
+      - "codex/delivery-2026-09-13"
 
 jobs:
   unreleased-deps:
@@ -65,6 +66,20 @@ jobs:
         run: oca_init_test_database
       - name: Run tests
         run: oca_run_tests
+      - name: Export translations for review
+        if: ${{ matrix.makepot == 'true' }}
+        run: |
+          pip install click-odoo-contrib
+          click-odoo-makepot --addons-dir "${ADDONS_DIR}" -d "${PGDATABASE}" --msgmerge-if-new-pot --log-level=debug
+      - name: Upload exported translations
+        if: ${{ matrix.makepot == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-translations
+          path: |
+            **/i18n/*.pot
+            **/i18n/*.po
+          if-no-files-found: error
       - uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
