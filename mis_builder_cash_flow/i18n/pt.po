@@ -291,7 +291,7 @@ msgstr "Total"
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__account_type
 msgid "Type"
-msgstr "Tipo de Linha"
+msgstr "Tipo"
 
 #. module: mis_builder_cash_flow
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_search_view

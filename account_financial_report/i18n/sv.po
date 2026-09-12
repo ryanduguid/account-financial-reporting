@@ -182,9 +182,7 @@ msgstr "Konfiguration av ålderspartnerrapport"
 msgid ""
 "Age ≤ 120\n"
 "                            d."
-msgstr ""
-"Ålder ≤ 120 år\n"
-"                            d."
+msgstr "Ålder ≤ 120 d.\n                            d."
 
 #. module: account_financial_report
 #. odoo-python
@@ -197,9 +195,7 @@ msgstr "Ålder ≤ 120 d."
 msgid ""
 "Age ≤ 30\n"
 "                            d."
-msgstr ""
-"Ålder ≤ 30 år\n"
-"                            d."
+msgstr "Ålder ≤ 30 d.\n                            d."
 
 #. module: account_financial_report
 #. odoo-python
@@ -212,9 +208,7 @@ msgstr "Ålder ≤ 30 d."
 msgid ""
 "Age ≤ 60\n"
 "                            d."
-msgstr ""
-"Ålder ≤ 60 år\n"
-"                            d."
+msgstr "Ålder ≤ 60 d.\n                            d."
 
 #. module: account_financial_report
 #. odoo-python
@@ -227,9 +221,7 @@ msgstr "Ålder ≤ 60 d."
 msgid ""
 "Age ≤ 90\n"
 "                            d."
-msgstr ""
-"Ålder ≤ 90 år\n"
-"                            d."
+msgstr "Ålder ≤ 90 d.\n                            d."
 
 #. module: account_financial_report
 #. odoo-python
@@ -838,7 +830,7 @@ msgstr "Filtrera partners"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 msgid "Filtered accounts (empty for all)"
-msgstr ""
+msgstr "Filtrerade konton (tomt för alla)"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__foreign_currency
@@ -848,7 +840,7 @@ msgstr "Utländsk valuta"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
@@ -1073,7 +1065,7 @@ msgstr "Domän för verifikat"
 #: model:ir.actions.report,name:account_financial_report.action_print_journal_ledger_wizard_html
 #: model:ir.ui.menu,name:account_financial_report.menu_journal_ledger_wizard
 msgid "Journal Ledger"
-msgstr "Dagbok"
+msgstr "Journalhuvudbok"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_base
@@ -1117,7 +1109,7 @@ msgstr "Journaler"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__label_text_limit
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__label_text_limit
 msgid "Label Text Limit"
-msgstr ""
+msgstr "Textgräns för etikett"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__write_uid
@@ -1181,7 +1173,7 @@ msgstr "Saknad partner"
 #. odoo-python
 #: code:addons/account_financial_report/report/open_items.py:0
 msgid "Missing Salesperson"
-msgstr ""
+msgstr "Säljare saknas"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_account_age_report_configuration_line
@@ -1231,7 +1223,7 @@ msgstr "Namnet måste vara unikt för varje rapportkonfiguration"
 #: code:addons/account_financial_report/report/vat_report_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
 msgid "Net"
-msgstr "Nät"
+msgstr "Netto"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1380,7 +1372,7 @@ msgstr "Kund initial balans"
 #. module: account_financial_report
 #: model:ir.model.fields.selection,name:account_financial_report.selection__open_items_report_wizard__grouped_by__salesperson
 msgid "Partner Salesperson"
-msgstr ""
+msgstr "Kontaktens säljare"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1621,7 +1613,7 @@ msgstr "Skatt"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 msgid "Tax Amount"
-msgstr "Skattesats"
+msgstr "Skattebelopp"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1929,32 +1921,32 @@ msgstr "till"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 16.21%;"
-msgstr "bredd: 16,21%;"
+msgstr "width: 16.21%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.24%;"
-msgstr "bredd: 23,24%;"
+msgstr "width: 23.24%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.78%;"
-msgstr "bredd: 23,78 procent;"
+msgstr "width: 23.78%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 31.35%;"
-msgstr "bredd: 31,35%;"
+msgstr "width: 31.35%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 38.92%;"
-msgstr "bredd: 38,92%;"
+msgstr "width: 38.92%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 8.11%;"
-msgstr "bredd: 8,11%;"
+msgstr "width: 8.11%;"
 
 #~ msgid "10"
 #~ msgstr "10"

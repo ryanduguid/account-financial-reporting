@@ -14,15 +14,15 @@
 - Akim Juillerat \<<akim.juillerat@camptocamp.com>\>
 - Alexis de Lattre \<<alexis@via.ecp.fr>\>
 - Mihai Fekete \<<feketemihai@gmail.com>\>
-- Miquel Ra??ch \<<miquel.raich@forgeflow.com>\>
+- Miquel Raïch \<<miquel.raich@forgeflow.com>\>
 - Joan Sisquella \<<joan.sisquella@forgeflow.com>\>
 - [Tecnativa](https://www.tecnativa.com):
   - Pedro M. Baeza
   - Sergio Teruel
   - Ernesto Tejeda
   - João Marques
-  - Alexandre D. D??az
-  - V??ctor Mart??nez
+  - Alexandre D. Díaz
+  - Víctor Martínez
   - Carolina Fernandez
   - Eduardo Ezerouali
 - [Sygel](https://www.sygel.es):
@@ -30,7 +30,7 @@
   - Valentin Vinagre
 - Lois Rilo \<<lois.rilo@forgeflow.com>\>
 - Saran Lim. \<<saranl@ecosoft.co.th>\>
-- Omar Casti??eira \<<omar@comunitea.com>\>
+- Omar Castiñeira \<<omar@comunitea.com>\>
 - Chau Le \<<chaulb@trobz.com>\>
 - [Stesi Consulting](https://www.stesi.consulting):
   - Michele Di Croce \<<dicroce.m@stesi.consulting>\>

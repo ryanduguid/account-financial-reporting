@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 =========================
 Account Financial Reports
 =========================
@@ -17,7 +13,7 @@ Account Financial Reports
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Faccount--financial--reporting-lightgray.png?logo=github
@@ -52,7 +48,7 @@ foreign currency balances are not available.
 
 Invoicing / Settings / Invoicing / OCA Aged Report Configuration you
 will be able to set dynamic intervals that will appear on the Aged
-Partner Balance. For further information, check CONFIGURE.rst
+Partner Balance. For further information, check readme/CONFIGURE.md
 
 **Table of contents**
 
@@ -77,7 +73,7 @@ Example of configuration inferior limit:
 -> 15 -> 30 -> 60
 
 It means the first interval is from 0 to 15, the second from 16 to 30,
-and the third is 61+.
+the third from 31 to 60, and the fourth is 61+.
 
 Go on 'Invoicing' -> 'Reporting' -> 'OCA accounting reports' -> 'Aged
 Partner Balance'
@@ -164,7 +160,7 @@ Contributors
 - Akim Juillerat <akim.juillerat@camptocamp.com>
 - Alexis de Lattre <alexis@via.ecp.fr>
 - Mihai Fekete <feketemihai@gmail.com>
-- Miquel Ra??ch <miquel.raich@forgeflow.com>
+- Miquel Raïch <miquel.raich@forgeflow.com>
 - Joan Sisquella <joan.sisquella@forgeflow.com>
 - `Tecnativa <https://www.tecnativa.com>`__:
 
@@ -172,8 +168,8 @@ Contributors
   - Sergio Teruel
   - Ernesto Tejeda
   - João Marques
-  - Alexandre D. D??az
-  - V??ctor Mart??nez
+  - Alexandre D. Díaz
+  - Víctor Martínez
   - Carolina Fernandez
   - Eduardo Ezerouali
 
@@ -184,7 +180,7 @@ Contributors
 
 - Lois Rilo <lois.rilo@forgeflow.com>
 - Saran Lim. <saranl@ecosoft.co.th>
-- Omar Casti??eira <omar@comunitea.com>
+- Omar Castiñeira <omar@comunitea.com>
 - Chau Le <chaulb@trobz.com>
 - `Stesi Consulting <https://www.stesi.consulting>`__:
 

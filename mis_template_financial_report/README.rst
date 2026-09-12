@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ===========================================
 Profit & Loss / Balance sheet MIS templates
 ===========================================
@@ -17,7 +13,7 @@ Profit & Loss / Balance sheet MIS templates
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Faccount--financial--reporting-lightgray.png?logo=github
@@ -55,7 +51,7 @@ Select one of the Profit & Loss or Balance Sheet templates in a new MIS
 report.
 
 For details, refer to the `MIS Builder
-documentation <https://github.com/OCA/mis-builder/tree/14.0/mis_builder#usage>`__
+documentation <https://github.com/OCA/mis-builder/tree/18.0/mis_builder#usage>`__
 
 Known issues / Roadmap
 ======================

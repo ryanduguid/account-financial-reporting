@@ -33,6 +33,7 @@ class OpenItemsReport(models.AbstractModel):
             grouped_by,
         )
         if grouped_by == "partner_shipping":
+            open_items_move_lines_data = {}
             for move_line in move_lines:
                 move = self.env["account.move"].browse(move_line["move_id"][0])
                 partner = move.partner_shipping_id

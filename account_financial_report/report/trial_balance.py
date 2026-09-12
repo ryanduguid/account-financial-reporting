@@ -757,10 +757,10 @@ class TrialBalanceReport(models.AbstractModel):
                 for acc_key in acc_keys:
                     groups_data[parent_id][acc_key] += groups_data[group_id][acc_key]
                 if foreign_currency:
-                    groups_data[group_id]["initial_currency_balance"] += groups_data[
+                    groups_data[parent_id]["initial_currency_balance"] += groups_data[
                         group_id
                     ]["initial_currency_balance"]
-                    groups_data[group_id]["ending_currency_balance"] += groups_data[
+                    groups_data[parent_id]["ending_currency_balance"] += groups_data[
                         group_id
                     ]["ending_currency_balance"]
                 parent_id = groups_data[parent_id]["parent_id"]

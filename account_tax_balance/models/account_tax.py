@@ -33,7 +33,7 @@ class AccountTax(models.Model):
         )
 
     def _account_tax_ids_with_moves_query(self):
-        from_date, to_date, company_ids, _ = self.get_context_values()
+        from_date, to_date, company_ids, target_move = self.get_context_values()
         company_ids = tuple(company_ids)
         query = """
             SELECT id
@@ -43,6 +43,10 @@ class AccountTax(models.Model):
             EXISTS (
               SELECT 1 FROM account_move_Line aml
               WHERE
+                EXISTS (
+                  SELECT 1 FROM account_move am
+                  WHERE am.id = aml.move_id AND am.state = ANY(%s)
+                ) AND
                 date >= %s AND
                 date <= %s AND
                 company_id in %s AND (
@@ -55,7 +59,13 @@ class AccountTax(models.Model):
                 )
             )
         """
-        params = (company_ids, from_date, to_date, company_ids)
+        params = (
+            company_ids,
+            self.get_target_state_list(target_move),
+            from_date,
+            to_date,
+            company_ids,
+        )
         return query, params
 
     def _account_tax_ids_with_moves(self):

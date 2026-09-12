@@ -255,6 +255,18 @@ class JournalLedgerReport(models.AbstractModel):
 
     def _get_journal_tax_lines(self, wizard, moves_data):
         journals_taxes_data = {}
+        all_tax_ids = set()
+        for move_data in moves_data:
+            for line in move_data["report_move_lines"]:
+                all_tax_ids.update(line["tax_ids"])
+                if line["tax_line_id"]:
+                    all_tax_ids.add(line["tax_line_id"])
+        taxes_by_id = {
+            tax.id: tax
+            for tax in self.env["account.tax"]
+            .with_context(active_test=False)
+            .search_fetch([("id", "in", list(all_tax_ids))], ["name", "description"])
+        }
         for move_data in moves_data:
             report_move_lines = move_data["report_move_lines"]
             for report_move_line in report_move_lines:
@@ -268,11 +280,9 @@ class JournalLedgerReport(models.AbstractModel):
                 journal_id = ml_data["journal_id"]
                 if journal_id not in journals_taxes_data.keys():
                     journals_taxes_data[journal_id] = {}
-                taxes = (
-                    self.env["account.tax"]
-                    .with_context(active_test=False)
-                    .search_fetch([("id", "in", tax_ids)], ["name", "description"])
-                )
+                taxes = [
+                    taxes_by_id[tax_id] for tax_id in tax_ids if tax_id in taxes_by_id
+                ]
                 for tax in taxes:
                     if tax.id not in journals_taxes_data[journal_id]:
                         journals_taxes_data[journal_id][tax.id] = {

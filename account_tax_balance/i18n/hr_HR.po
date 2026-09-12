@@ -73,9 +73,8 @@ msgstr "Otkaži"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__company_ids
-#, fuzzy
 msgid "Companies"
-msgstr "Tvrtka"
+msgstr "Tvrtke"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__create_uid
@@ -284,9 +283,8 @@ msgstr ""
 
 #. module: account_tax_balance
 #: model:ir.model,name:account_tax_balance.model_wizard_open_tax_balances
-#, fuzzy
 msgid "Wizard Open Tax Balances"
-msgstr "wizard.open.tax.balances"
+msgstr "Čarobnjak za otvaranje poreznih salda"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.wizard_open_tax_balances

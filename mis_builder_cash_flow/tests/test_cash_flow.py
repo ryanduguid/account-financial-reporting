@@ -155,6 +155,7 @@ class TestCashFlow(TransactionCase):
             ignore_rows = []
         with mute_logger("odoo.addons.mis_builder.models.kpimatrix"):
             matrix = self.report._compute_matrix()
+        found_expectations = set()
         for row in matrix.iter_rows():
             if row.kpi.name in ignore_rows:
                 continue
@@ -166,6 +167,12 @@ class TestCashFlow(TransactionCase):
                 for exp in args:
                     if exp[0] == row.kpi.name and exp[1] == label:
                         found = True
+                        self.assertEqual(cell.val, exp[2])
+                        found_expectations.add((exp[0], exp[1]))
                         break
                 if not found:
                     self.assertEqual(cell.val, 0)
+        self.assertEqual(
+            found_expectations,
+            {(name, label) for name, label, _value in args if name not in ignore_rows},
+        )

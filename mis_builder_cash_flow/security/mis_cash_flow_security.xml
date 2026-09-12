@@ -5,7 +5,7 @@
     <record model="ir.model.access" id="mis_cash_flow_access_name">
         <field name="name">mis.cash_flow</field>
         <field name="model_id" ref="model_mis_cash_flow" />
-        <field name="group_id" ref="base.group_user" />
+        <field name="group_id" ref="account.group_account_readonly" />
         <field name="perm_read" eval="1" />
         <field name="perm_create" eval="0" />
         <field name="perm_write" eval="0" />
@@ -14,7 +14,7 @@
     <record model="ir.model.access" id="mis_cash_flow_forecast_line_access_name">
         <field name="name">mis.cash_flow.forecast_line</field>
         <field name="model_id" ref="model_mis_cash_flow_forecast_line" />
-        <field name="group_id" ref="base.group_user" />
+        <field name="group_id" ref="account.group_account_manager" />
         <field name="perm_read" eval="1" />
         <field name="perm_create" eval="1" />
         <field name="perm_write" eval="1" />

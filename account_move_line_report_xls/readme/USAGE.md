@@ -14,12 +14,12 @@ methods of the 'account.move.line' object:
 
   The following fields are defined in the Excel template:
 
-  > move, name, date, journal, period, partner, account, date_maturity,
-  > debit, credit, balance, reconcile, reconcile_partial,
-  > analytic_account, ref, partner_ref, tax_code, tax_amount,
-  > amount_residual, amount_currency, currency_name, company_currency,
-  > amount_residual_currency, product, product_ref', product_uom,
-  > quantity, statement, invoice, narration, blocked
+  > move, name, ref, date, partner, partner_ref, account, date_maturity,
+  > debit, credit, balance, full_reconcile, reconcile_amount,
+  > matched_debit_ids, matched_credit_ids, amount_currency, currency_name,
+  > journal, company_currency, product, product_ref, product_uom, quantity,
+  > statement, invoice, amount_residual, amount_residual_currency,
+  > narration, blocked, id
 
 - **\_report_xlsx_template**
 

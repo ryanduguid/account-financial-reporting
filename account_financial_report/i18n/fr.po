@@ -1693,9 +1693,7 @@ msgstr ""
 msgid ""
 "The Company in the Trial Balance Report Wizard and in Date Range must be the "
 "same."
-msgstr ""
-"La société dans la balance générale et dans la plage de dates doit être l "
-"même."
+msgstr "La société dans la balance générale et dans la plage de dates doit être la même."
 
 #. module: account_financial_report
 #. odoo-python
@@ -1782,11 +1780,7 @@ msgstr "Balance générale XLSX"
 msgid ""
 "Trial Balance can be computed only if selected company have only\n"
 "                        one unaffected earnings account."
-msgstr ""
-"La balance générale ne peut ếtre générée que si la société sélectionnée a un "
-"seul\n"
-"                                    compte de type bénéfice de l'année en "
-"cours."
+msgstr "La balance générale ne peut être générée que si la société sélectionnée a un seul\n                                    compte de type bénéfice de l'année en cours."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__unaffected_earnings_account

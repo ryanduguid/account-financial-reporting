@@ -148,7 +148,7 @@ msgstr "Laatst gewijzigd door"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__write_date
 msgid "Last Updated on"
-msgstr "Laatst bijgewerkt door"
+msgstr "Laatst bijgewerkt op"
 
 #. module: account_tax_balance
 #. odoo-python

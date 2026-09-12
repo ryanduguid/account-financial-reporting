@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 =============================
 Account Move Line XLSX export
 =============================
@@ -17,7 +13,7 @@ Account Move Line XLSX export
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Faccount--financial--reporting-lightgray.png?logo=github
@@ -33,7 +29,7 @@ Account Move Line XLSX export
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
 This module extends the functionality of the journal items
-('account.move.line') list view and allow you to export the selected
+('account.move.line') list view and allows you to export the selected
 lines.
 
 **Table of contents**
@@ -60,12 +56,12 @@ methods of the 'account.move.line' object:
 
   The following fields are defined in the Excel template:
 
-     move, name, date, journal, period, partner, account, date_maturity,
-     debit, credit, balance, reconcile, reconcile_partial,
-     analytic_account, ref, partner_ref, tax_code, tax_amount,
-     amount_residual, amount_currency, currency_name, company_currency,
-     amount_residual_currency, product, product_ref', product_uom,
-     quantity, statement, invoice, narration, blocked
+     move, name, ref, date, partner, partner_ref, account,
+     date_maturity, debit, credit, balance, full_reconcile,
+     reconcile_amount, matched_debit_ids, matched_credit_ids,
+     amount_currency, currency_name, journal, company_currency, product,
+     product_ref, product_uom, quantity, statement, invoice,
+     amount_residual, amount_residual_currency, narration, blocked, id
 
 - **\_report_xlsx_template**
 

@@ -410,11 +410,11 @@ class AbstractReportXslx(models.AbstractModel):
             else:
                 currency = line_dict["currency_id"]
             field_name = f"{field_prefix}_{currency.name}"
-            if hasattr(self, field_name):
-                format_amt = getattr(self, field_name)
+            if field_name in report_data:
+                format_amt = report_data[field_name]
             else:
                 format_amt = report_data["workbook"].add_format()
-                report_data["field_name"] = format_amt
+                report_data[field_name] = format_amt
                 format_amt.set_num_format(self._report_xlsx_currency_format(currency))
         return format_amt
 
@@ -423,13 +423,13 @@ class AbstractReportXslx(models.AbstractModel):
         format_amt = report_data["formats"]["format_header_amount"]
         if line_object["currency_id"]:
             field_name = f"format_header_amount_{line_object['currency_name']}"
-            if hasattr(self, field_name):
-                format_amt = getattr(self, field_name)
+            if field_name in report_data:
+                format_amt = report_data[field_name]
             else:
                 format_amt = report_data["workbook"].add_format(
                     {"bold": True, "border": True, "bg_color": "#FFFFCC"}
                 )
-                report_data["field_name"] = format_amt
+                report_data[field_name] = format_amt
                 currency = self.env["res.currency"].browse(line_object["currency_id"])
                 format_amount = "#,##0." + ("0" * currency.decimal_places)
                 format_amt.set_num_format(format_amount)

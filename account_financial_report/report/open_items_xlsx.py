@@ -3,6 +3,8 @@
 # Copyright 2021 Tecnativa - João Marques
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+import re
+
 from odoo import _, models
 
 
@@ -123,11 +125,25 @@ class OpenItemsXslx(models.AbstractModel):
         journals_data = res_data["journals_data"]
         total_amount = res_data["total_amount"]
 
+        sheet_names = {sheet.get_name().casefold() for sheet in workbook.worksheets()}
         for partner_id in partners_data.keys():
             # Create a new sheet for each partner
             partner_totals = {}
             partner_name = partners_data[partner_id]["name"]
-            new_sheet = workbook.add_worksheet(partner_name[:31])
+            base_name = (
+                re.sub(r"[\[\]:*?/\\]", "_", partner_name).strip("'") or "Partner"
+            )
+            sheet_name = base_name[:31].strip("'")
+            suffix = 1
+            while (
+                sheet_name.casefold() in sheet_names
+                or sheet_name.casefold() == "history"
+            ):
+                ending = f" ({suffix})"
+                sheet_name = base_name[: 31 - len(ending)].strip("'") + ending
+                suffix += 1
+            sheet_names.add(sheet_name.casefold())
+            new_sheet = workbook.add_worksheet(sheet_name)
             report_data["sheet"] = new_sheet
             report_data["row_pos"] = 0
 

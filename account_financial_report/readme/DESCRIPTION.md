@@ -18,4 +18,4 @@ foreign currency balances are not available.
 
 Invoicing / Settings / Invoicing / OCA Aged Report Configuration you will be able to set
 dynamic intervals that will appear on the Aged Partner Balance.
-For further information, check CONFIGURE.rst
+For further information, check readme/CONFIGURE.md
