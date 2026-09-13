@@ -282,9 +282,8 @@ msgstr "Reguläre Steuerpositionen betrachten"
 
 #. module: account_tax_balance
 #: model:ir.model,name:account_tax_balance.model_wizard_open_tax_balances
-#, fuzzy
 msgid "Wizard Open Tax Balances"
-msgstr "wizard.open.tax.balances"
+msgstr "Assistent zum Öffnen der Steuersalden"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.wizard_open_tax_balances

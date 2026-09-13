@@ -461,7 +461,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__create_uid
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__create_uid
 msgid "Created by"
-msgstr "Gecre??erd door"
+msgstr "Gecreëerd door"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__create_date
@@ -473,7 +473,7 @@ msgstr "Gecre??erd door"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__create_date
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__create_date
 msgid "Created on"
-msgstr "Gecre??erd op"
+msgstr "Gecreëerd op"
 
 #. module: account_financial_report
 #. odoo-python
@@ -921,9 +921,7 @@ msgstr "Grootboek XLSX"
 msgid ""
 "General Ledger can be computed only if selected company have\n"
 "                        only one unaffected earnings account."
-msgstr ""
-"Grootboek kan alleen worden berekend als het geselecteerde bedrijf\n"
-"                        slechts ????n niet-be??nvloede winstrekening heeft."
+msgstr "Grootboek kan alleen worden berekend als het geselecteerde bedrijf\n                        slechts één niet-beïnvloede winstrekening heeft."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__group_option
@@ -1542,7 +1540,7 @@ msgstr "Toon buitenlandse valuta"
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy
 msgid "Show hierarchy"
-msgstr "Hi??rarchie tonen"
+msgstr "Hiërarchie tonen"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__sort_option
@@ -1706,8 +1704,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
 msgid "The hierarchy level to filter on must be greater than 0."
-msgstr ""
-"Het hi??rarchieniveau waarop gefilterd moet worden, moet groter zijn dan 0."
+msgstr "Het hiërarchieniveau waarop gefilterd moet worden, moet groter zijn dan 0."
 
 #. module: account_financial_report
 #. odoo-python
@@ -1781,10 +1778,7 @@ msgstr "Proefbalans XLSX"
 msgid ""
 "Trial Balance can be computed only if selected company have only\n"
 "                        one unaffected earnings account."
-msgstr ""
-"Proefbalans kan alleen worden berekend als het geselecteerde bedrijf "
-"slechts\n"
-"                        ????n winstrekening heeft."
+msgstr "Proefbalans kan alleen worden berekend als het geselecteerde bedrijf slechts\n                        één winstrekening heeft."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__unaffected_earnings_account
@@ -1807,7 +1801,7 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__show_hierarchy
 msgid "Use when your account groups are hierarchical"
-msgstr "Gebruik dit als je rekeninggroepen hi??rarchisch zijn"
+msgstr "Gebruik dit als je rekeninggroepen hiërarchisch zijn"
 
 #. module: account_financial_report
 #: model:ir.actions.act_window,name:account_financial_report.action_vat_report_wizard
@@ -1920,32 +1914,32 @@ msgstr "tot"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 16.21%;"
-msgstr "breedte: 16,21%;"
+msgstr "width: 16.21%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.24%;"
-msgstr "breedte: 23.24%;"
+msgstr "width: 23.24%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.78%;"
-msgstr "breedte: 23.78%;"
+msgstr "width: 23.78%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 31.35%;"
-msgstr "breedte: 31,35%;"
+msgstr "width: 31.35%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 38.92%;"
-msgstr "breedte: 38.92%;"
+msgstr "width: 38.92%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 8.11%;"
-msgstr "breedte: 8.11%;"
+msgstr "width: 8.11%;"
 
 #~ msgid "10"
 #~ msgstr "10"

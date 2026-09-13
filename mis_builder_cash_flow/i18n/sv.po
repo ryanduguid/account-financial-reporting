@@ -260,7 +260,7 @@ msgstr "BALANS PERIOD"
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__parent_state
 msgid "Parent State"
-msgstr ""
+msgstr "Överordnad status"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__partner_id
@@ -283,7 +283,7 @@ msgstr "Redovisningen av prognoslinjen är endast för informativt syfte"
 #. odoo-python
 #: code:addons/mis_builder_cash_flow/models/mis_cash_flow_forecast_line.py:0
 msgid "The forecast line company must be one of the account's companies."
-msgstr ""
+msgstr "Prognosradens företag måste vara ett av kontots företag."
 
 #. module: mis_builder_cash_flow
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_form_view

@@ -119,7 +119,7 @@ msgstr "Agrupar por"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__has_moves
 msgid "Has balance in period"
-msgstr "Como o saldo do período"
+msgstr "Tem saldo no período"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__id
@@ -139,12 +139,12 @@ msgstr "Item de Diário"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__write_uid
 msgid "Last Updated by"
-msgstr "Última atualização em"
+msgstr "Última atualização por"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__write_date
 msgid "Last Updated on"
-msgstr "Última atualização por"
+msgstr "Última atualização em"
 
 #. module: account_tax_balance
 #. odoo-python

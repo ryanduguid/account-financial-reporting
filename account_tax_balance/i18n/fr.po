@@ -213,7 +213,7 @@ msgstr "Groupe de Taxes"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_search_balance
 msgid "Tax Scope"
-msgstr "But du Taxe"
+msgstr "Champ d’application de la taxe"
 
 #. module: account_tax_balance
 #: model:ir.actions.act_window,name:account_tax_balance.action_open_tax_balances
@@ -248,7 +248,7 @@ msgstr "Solde de Base Total"
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_tax.py:0
 msgid "Unsupported search operator"
-msgstr "Gestionnaire de Recherche Non-appuye"
+msgstr "Opérateur de recherche non pris en charge"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance

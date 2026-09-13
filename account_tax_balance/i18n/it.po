@@ -167,25 +167,25 @@ msgstr "Altro"
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_move.py:0
 msgid "Payable"
-msgstr "Pagamenti"
+msgstr "Debiti"
 
 #. module: account_tax_balance
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_move.py:0
 msgid "Payable refund"
-msgstr "Rimborso pagabile"
+msgstr "Note di credito su acquisti"
 
 #. module: account_tax_balance
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_move.py:0
 msgid "Receivable"
-msgstr "Incassi"
+msgstr "Crediti"
 
 #. module: account_tax_balance
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_move.py:0
 msgid "Receivable refund"
-msgstr "Rimborso pagabile"
+msgstr "Note di credito su vendite"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_search_balance

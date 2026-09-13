@@ -198,7 +198,7 @@ msgstr "Korte Naam"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__target_move
 msgid "Target Moves"
-msgstr "Verplaatsbaar doel"
+msgstr "Te selecteren boekingen"
 
 #. module: account_tax_balance
 #: model:ir.model,name:account_tax_balance.model_account_tax
@@ -253,7 +253,7 @@ msgstr "Ongeldige zoekoperatie"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
 msgid "View base lines"
-msgstr "Bekijk algemene regels"
+msgstr "Grondslagregels bekijken"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
@@ -263,7 +263,7 @@ msgstr "Bekijk algemene terugbetalingregels"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
 msgid "View base regular lines"
-msgstr "Bekijk algemene regelmatige regels"
+msgstr "Grondslagregels van facturen bekijken"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance

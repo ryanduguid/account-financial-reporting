@@ -25,7 +25,6 @@ class AgedPartnerBalanceWizard(models.TransientModel):
         comodel_name="account.account",
         string="Filter accounts",
         domain=[("reconcile", "=", True)],
-        required=True,
     )
     receivable_accounts_only = fields.Boolean()
     payable_accounts_only = fields.Boolean()

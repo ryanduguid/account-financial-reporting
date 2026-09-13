@@ -781,7 +781,7 @@
                             </t>
                         </div>
                     </t>
-                    <t t-if="not account['currency_id']">
+                    <t t-if="not account['fin_bal_currency_id']">
                         <div class="act_as_cell amount" style="width: 3.63%;" />
                         <div class="act_as_cell amount" style="width: 3.63%;" />
                     </t>

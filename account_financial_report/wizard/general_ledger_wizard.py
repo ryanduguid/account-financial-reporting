@@ -7,7 +7,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-import time
 from ast import literal_eval
 
 from odoo import api, fields, models
@@ -110,32 +109,27 @@ class GeneralLedgerReportWizard(models.TransientModel):
             self.account_ids = self.env["account.account"].search(domain)
 
     def _init_date_from(self):
-        """set start date to begin of current year if fiscal year running"""
+        """Return the start of the current company fiscal year."""
         today = fields.Date.context_today(self)
         company = self.company_id or self.env.company
-        last_fsc_month = company.fiscalyear_last_month
-        last_fsc_day = company.fiscalyear_last_day
-
-        if (
-            today.month < int(last_fsc_month)
-            or today.month == int(last_fsc_month)
-            and today.day <= last_fsc_day
-        ):
-            return time.strftime("%Y-01-01")
-        else:
-            return False
+        start, _end = date_utils.get_fiscal_year(
+            today,
+            day=company.fiscalyear_last_day,
+            month=int(company.fiscalyear_last_month),
+        )
+        return fields.Date.to_string(start)
 
     def _default_foreign_currency(self):
         return self.env.user.has_group("base.group_multi_currency")
 
-    @api.depends("date_from")
+    @api.depends("date_from", "company_id")
     def _compute_fy_start_date(self):
         for wiz in self:
             if wiz.date_from:
                 date_from, date_to = date_utils.get_fiscal_year(
                     wiz.date_from,
-                    day=self.company_id.fiscalyear_last_day,
-                    month=int(self.company_id.fiscalyear_last_month),
+                    day=wiz.company_id.fiscalyear_last_day,
+                    month=int(wiz.company_id.fiscalyear_last_month),
                 )
                 wiz.fy_start_date = date_from
             else:

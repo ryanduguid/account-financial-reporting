@@ -19,7 +19,7 @@
     <record id="mis_style_account_line" model="mis.report.style">
         <field name="name">Cash flow line</field>
         <field name="color_inherit" eval="False" />
-        <field name="color">#FFFFFF</field>
+        <field name="color">#222222</field>
         <field name="background_color_inherit" eval="False" />
         <field name="background_color">#D4AFC4</field>
         <field name="indent_level_inherit" eval="False" />

@@ -14,7 +14,8 @@ Example of configuration inferior limit:
 -> 30
 -> 60
 
-It means the first interval is from 0 to 15, the second from 16 to 30, and the third is 61+.
+It means the first interval is from 0 to 15, the second from 16 to 30,
+the third from 31 to 60, and the fourth is 61+.
 
 Go on 'Invoicing' -> 'Reporting' -> 'OCA accounting reports' -> 'Aged Partner Balance'
 

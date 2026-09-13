@@ -237,32 +237,32 @@ msgstr ""
 #: model:ir.actions.report,name:account_financial_report.action_print_report_aged_partner_balance_qweb
 #: model:ir.ui.menu,name:account_financial_report.menu_aged_partner_balance_wizard
 msgid "Aged Partner Balance"
-msgstr "Balance agée partenaire"
+msgstr "Balance âgée partenaire"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_base
 msgid "Aged Partner Balance -"
-msgstr "Balance agée partenaire -"
+msgstr "Balance âgée partenaire -"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_aged_partner_balance
 msgid "Aged Partner Balance Report"
-msgstr "Balance agée partenaire"
+msgstr "Balance âgée partenaire"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_aged_partner_balance_report_wizard
 msgid "Aged Partner Balance Wizard"
-msgstr "Assistant balance agée partenaire"
+msgstr "Assistant balance âgée partenaire"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_a_f_r_report_aged_partner_balance_xlsx
 msgid "Aged Partner Balance XLSL Report"
-msgstr "Balance agée partenaire XLSX"
+msgstr "Balance âgée partenaire XLSX"
 
 #. module: account_financial_report
 #: model:ir.actions.report,name:account_financial_report.action_report_aged_partner_balance_xlsx
 msgid "Aged Partner Balance XLSX"
-msgstr "Balance agée partenaire XLSX"
+msgstr "Balance âgée partenaire XLSX"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1690,9 +1690,7 @@ msgstr ""
 msgid ""
 "The Company in the Trial Balance Report Wizard and in Date Range must be the "
 "same."
-msgstr ""
-"La société dans la balance générale et dans la plage de dates doit être l "
-"même."
+msgstr "La société dans la balance générale et dans la plage de dates doit être la même."
 
 #. module: account_financial_report
 #. odoo-python
@@ -1779,11 +1777,7 @@ msgstr "Balance générale XLSX"
 msgid ""
 "Trial Balance can be computed only if selected company have only\n"
 "                        one unaffected earnings account."
-msgstr ""
-"La balance générale ne peut ếtre générée que si la société sélectionnée a un "
-"seul\n"
-"                                    compte de type bénéfice de l'année en "
-"cours."
+msgstr "La balance générale ne peut être générée que si la société sélectionnée a un seul\n                                    compte de type bénéfice de l'année en cours."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__unaffected_earnings_account

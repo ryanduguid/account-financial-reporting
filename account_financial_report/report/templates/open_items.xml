@@ -401,14 +401,13 @@
                     </div>
                 </t>
                 <t t-if='type == "partner_subtotal_type"'>
-                    <div class="act_as_cell first_column" style="width: 36.34%;" />
-                    <t
-                        t-set="partner"
-                        t-value="env['res.partner'].browse(partner_id_key)"
-                    />
-                    <t t-if="partner">
-                        <span t-esc="partner.name" />
-                    </t>
+                    <div class="act_as_cell first_column" style="width: 36.34%;">
+                        <t
+                            t-set="partner"
+                            t-value="env['res.partner'].browse(partner_id_key).exists()"
+                        />
+                        <span t-if="partner" t-esc="partner.name" />
+                    </div>
                     <div class="act_as_cell right" style="width: 28.66%;">
                         Ending
                         balance

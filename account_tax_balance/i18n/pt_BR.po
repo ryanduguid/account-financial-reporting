@@ -101,7 +101,7 @@ msgstr "Tipo Financeiro"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_account_move_filter
 msgid "Financial type"
-msgstr ""
+msgstr "Tipo Financeiro"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__from_date

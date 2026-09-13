@@ -25,6 +25,7 @@ class VATReport(models.AbstractModel):
                         "type_tax_use": tax.type_tax_use,
                         "amount_type": tax.amount_type,
                         "tags_ids": tax.invoice_repartition_line_ids.tag_ids.ids,
+                        "refund_tags_ids": tax.refund_repartition_line_ids.tag_ids.ids,
                     }
                 }
             )
@@ -80,6 +81,7 @@ class VATReport(models.AbstractModel):
                 {
                     "net": 0.0,
                     "tax": tax_move_line["balance"],
+                    "is_refund": tax_move_line["is_refund"],
                     "tax_line_id": tax_move_line["tax_line_id"][0],
                 }
             )
@@ -88,6 +90,7 @@ class VATReport(models.AbstractModel):
                 vat_data.append(
                     {
                         "net": taxed_move_line["balance"],
+                        "is_refund": taxed_move_line["is_refund"],
                         "tax": 0.0,
                         "tax_line_id": tax_id,
                     }
@@ -166,7 +169,8 @@ class VATReport(models.AbstractModel):
         vat_report = {}
         for tax_move_line in vat_report_data:
             tax_id = tax_move_line["tax_line_id"]
-            tags_ids = tax_data[tax_id]["tags_ids"]
+            tag_key = "refund_tags_ids" if tax_move_line["is_refund"] else "tags_ids"
+            tags_ids = tax_data[tax_id][tag_key]
             if tax_data[tax_id]["amount_type"] == "group":
                 continue
             else:
@@ -242,6 +246,7 @@ class VATReport(models.AbstractModel):
         return [
             "id",
             "tax_base_amount",
+            "is_refund",
             "balance",
             "tax_line_id",
             "tax_ids",

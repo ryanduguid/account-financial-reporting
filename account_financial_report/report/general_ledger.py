@@ -246,31 +246,38 @@ class GeneralLedgerReport(models.AbstractModel):
         return data
 
     def _prepare_gen_ld_data_group_taxes(self, data, domain, grouped_by):
-        gl_initial_acc_prt = self.env["account.move.line"].read_group(
-            domain=domain,
-            fields=[
-                "account_id",
-                "debit",
-                "credit",
-                "balance",
-                "amount_currency:sum",
-                "tax_line_id",
-            ],
-            groupby=["account_id"],
-            lazy=False,
-        )
-        if gl_initial_acc_prt:
-            for gl in gl_initial_acc_prt:
-                if "tax_line_id" in gl and gl["tax_line_id"]:
-                    tax_id = gl["tax_line_id"][0]
-                    tax_name = gl["tax_line_id"][1]
-                else:
-                    tax_id = 0
-                    tax_name = "Missing Tax"
+        for tax_field, tax_operator in [("tax_line_id", "!="), ("tax_ids", "=")]:
+            initial_groups = (
+                self.env["account.move.line"]
+                .with_context(active_test=False)
+                .read_group(
+                    domain=domain + [("tax_line_id", tax_operator, False)],
+                    fields=[
+                        "account_id",
+                        tax_field,
+                        "debit",
+                        "credit",
+                        "balance",
+                        "amount_currency:sum",
+                    ],
+                    groupby=["account_id", tax_field],
+                    lazy=False,
+                )
+            )
+            for gl in initial_groups:
+                tax_id, tax_name = gl[tax_field] or (0, _("Missing Tax"))
                 acc_id = gl["account_id"][0]
-                data[acc_id][tax_id] = self._prepare_gen_ld_data_item(gl)
-                data[acc_id][tax_id]["id"] = tax_id
-                data[acc_id][tax_id]["name"] = tax_name
+                amounts = self._prepare_gen_ld_data_item(gl)
+                if tax_id not in data[acc_id]:
+                    data[acc_id][tax_id] = {
+                        **amounts,
+                        "id": tax_id,
+                        "name": tax_name,
+                    }
+                else:
+                    for balance_key, values in amounts.items():
+                        for field_name, value in values.items():
+                            data[acc_id][tax_id][balance_key][field_name] += value
                 data[acc_id][grouped_by] = True
         return data
 

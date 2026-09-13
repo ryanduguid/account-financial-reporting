@@ -14,7 +14,9 @@ class TestCashFlow(TransactionCase):
     def setUp(self):
         super().setUp()
         self.company = self.env["res.company"].create({"name": "TEST"})
-        self.report = self.browse_ref("mis_builder_cash_flow.mis_instance_cash_flow")
+        self.report = self.browse_ref(
+            "mis_builder_cash_flow.mis_instance_cash_flow"
+        ).with_company(self.company)
         self.report.company_id = self.company
         self.bank_account = self.env["account.account"].create(
             {
@@ -38,7 +40,7 @@ class TestCashFlow(TransactionCase):
                 "company_ids": [(6, 0, [self.company.id])],
                 "code": "TEST3",
                 "name": "Account",
-                "account_type": "asset_cash",
+                "account_type": "asset_receivable",
                 "reconcile": True,
             }
         )
@@ -112,6 +114,8 @@ class TestCashFlow(TransactionCase):
                         0,
                         {
                             "account_id": self.account.id,
+                            "partner_id": self.company.partner_id.id,
+                            "date_maturity": Date.today(),
                             "debit": 0,
                             "credit": 2000,
                             "company_id": self.company.id,
@@ -155,6 +159,7 @@ class TestCashFlow(TransactionCase):
             ignore_rows = []
         with mute_logger("odoo.addons.mis_builder.models.kpimatrix"):
             matrix = self.report._compute_matrix()
+        found_expectations = set()
         for row in matrix.iter_rows():
             if row.kpi.name in ignore_rows:
                 continue
@@ -166,6 +171,12 @@ class TestCashFlow(TransactionCase):
                 for exp in args:
                     if exp[0] == row.kpi.name and exp[1] == label:
                         found = True
+                        self.assertEqual(cell.val, exp[2])
+                        found_expectations.add((exp[0], exp[1]))
                         break
                 if not found:
                     self.assertEqual(cell.val, 0)
+        self.assertEqual(
+            found_expectations,
+            {(name, label) for name, label, _value in args if name not in ignore_rows},
+        )

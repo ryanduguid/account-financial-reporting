@@ -243,7 +243,7 @@ class AgedPartnerBalanceXslx(models.AbstractModel):
                 self.write_account_footer_from_dict(
                     report,
                     account,
-                    ("Total"),
+                    self.env._("Total"),
                     "field_footer_total",
                     report_data["formats"]["format_header_right"],
                     report_data["formats"]["format_header_amount"],
@@ -253,7 +253,7 @@ class AgedPartnerBalanceXslx(models.AbstractModel):
                 self.write_account_footer_from_dict(
                     report,
                     account,
-                    ("Percents"),
+                    self.env._("Percents"),
                     "field_footer_percent",
                     report_data["formats"]["format_right_bold_italic"],
                     report_data["formats"]["format_percent_bold_italic"],
@@ -293,7 +293,7 @@ class AgedPartnerBalanceXslx(models.AbstractModel):
                 self.write_account_footer_from_dict(
                     report,
                     account,
-                    ("Total"),
+                    self.env._("Total"),
                     "field_footer_total",
                     report_data["formats"]["format_header_right"],
                     report_data["formats"]["format_header_amount"],
@@ -304,7 +304,7 @@ class AgedPartnerBalanceXslx(models.AbstractModel):
                 self.write_account_footer_from_dict(
                     report,
                     account,
-                    ("Percents"),
+                    self.env._("Percents"),
                     "field_footer_percent",
                     report_data["formats"]["format_right_bold_italic"],
                     report_data["formats"]["format_percent_bold_italic"],

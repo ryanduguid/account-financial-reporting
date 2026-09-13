@@ -76,13 +76,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 msgid "<span class=\"oe_inline\">To</span>"
-msgstr "<span class=\"oe_inline\">C??tre</span>"
+msgstr "<span class=\"oe_inline\">Către</span>"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_abstract_report
-#, fuzzy
 msgid "Abstract Report"
-msgstr "Raport TVA"
+msgstr "Raport abstract"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_account_financial_report_abstract_wizard
@@ -129,7 +128,7 @@ msgstr "Cod cont de la"
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__account_code_to
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__account_code_to
 msgid "Account Code To"
-msgstr "Cod cont c??tre"
+msgstr "Cod cont către"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_account_group
@@ -171,7 +170,7 @@ msgstr "Activare centralizare"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
 msgid "Additional Filtering"
-msgstr "Filtrare suplimentar??"
+msgstr "Filtrare suplimentară"
 
 #. module: account_financial_report
 #: model:ir.actions.act_window,name:account_financial_report.action_aged_partner_report_configuration
@@ -278,7 +277,7 @@ msgstr "Tot"
 #: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__target_move__all
 #: model:ir.model.fields.selection,name:account_financial_report.selection__vat_report_wizard__target_move__all
 msgid "All Entries"
-msgstr "Toate ??nregistr??rile"
+msgstr "Toate înregistrările"
 
 #. module: account_financial_report
 #: model:ir.model.fields.selection,name:account_financial_report.selection__aged_partner_balance_report_wizard__target_move__posted
@@ -287,7 +286,7 @@ msgstr "Toate ??nregistr??rile"
 #: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__target_move__posted
 #: model:ir.model.fields.selection,name:account_financial_report.selection__vat_report_wizard__target_move__posted
 msgid "All Posted Entries"
-msgstr "Toate ??nregistr??rile postare"
+msgstr "Toate înregistrările postare"
 
 #. module: account_financial_report
 #. odoo-python
@@ -300,7 +299,7 @@ msgstr "Toate ??nregistr??rile postare"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "All entries"
-msgstr "Toate ??nregistr??rile"
+msgstr "Toate înregistrările"
 
 #. module: account_financial_report
 #. odoo-python
@@ -313,7 +312,7 @@ msgstr "Toate ??nregistr??rile"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "All posted entries"
-msgstr "Toate ??nregistr??rile postare"
+msgstr "Toate înregistrările postare"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
@@ -324,7 +323,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Amount Currency"
-msgstr "Sum?? Valut??"
+msgstr "Sumă Valută"
 
 #. module: account_financial_report
 #. odoo-python
@@ -356,25 +355,25 @@ msgstr "Sold"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 msgid "Base Amount"
-msgstr "Valoare baz??"
+msgstr "Valoare bază"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Base Balance"
-msgstr "Sold baz??"
+msgstr "Sold bază"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Base Credit"
-msgstr "Credit baz??"
+msgstr "Credit bază"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Base Debit"
-msgstr "Debit baz??"
+msgstr "Debit bază"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__based_on
@@ -403,7 +402,7 @@ msgstr "Anulare"
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
 msgid "Centralize filter"
-msgstr "Centraliza??i filtrul"
+msgstr "Centralizați filtrul"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_account__centralized
@@ -573,7 +572,7 @@ msgstr "De la"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__date_to
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_filters
 msgid "Date To"
-msgstr "P??n?? la"
+msgstr "Până la"
 
 #. module: account_financial_report
 #. odoo-python
@@ -612,7 +611,7 @@ msgstr "Interval selectat"
 #. odoo-python
 #: code:addons/account_financial_report/report/vat_report_xlsx.py:0
 msgid "Date to"
-msgstr "P??n?? la"
+msgstr "Până la"
 
 #. module: account_financial_report
 #. odoo-python
@@ -650,7 +649,7 @@ msgstr "Detalii impozite"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__display_name
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__display_name
 msgid "Display Name"
-msgstr "Nume afi??at"
+msgstr "Nume afișat"
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__foreign_currency
@@ -660,10 +659,7 @@ msgid ""
 "Display foreign currency for move lines, unless account currency is not "
 "setup through chart of accounts will display initial and final balance in "
 "that currency."
-msgstr ""
-"Afi??a??i moneda str??in?? pentru liniile de mutare, cu excep??ia cazului ??"
-"n care moneda contului nu este configurat?? prin planul de conturi, va afi??"
-"a soldul ini??ial ??i final ??n moneda respectiv??."
+msgstr "Afișați moneda străină pentru liniile de mutare, cu excepția cazului în care moneda contului nu este configurată prin planul de conturi, va afișa soldul inițial și final în moneda respectivă."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_parent_hierarchy_level
@@ -675,28 +671,26 @@ msgstr ""
 msgid ""
 "Due\n"
 "                        date"
-msgstr "Dat?? scadent??"
+msgstr "Dată scadentă"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines_header
 msgid ""
 "Due\n"
 "                    date"
-msgstr ""
-"Dat?? \n"
-"scadent??"
+msgstr "Dată \nscadentă"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/open_items_xlsx.py:0
 msgid "Due date"
-msgstr "Data scadent??"
+msgstr "Data scadentă"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__date_to
 msgid "End Date"
-msgstr "Dat?? final"
+msgstr "Dată final"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__date_to
@@ -741,7 +735,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Entries sorted by"
-msgstr "??nregistr??ri sortate dup??"
+msgstr "Înregistrări sortate după"
 
 #. module: account_financial_report
 #. odoo-python
@@ -754,13 +748,13 @@ msgstr "??nregistr??ri sortate dup??"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines_header
 msgid "Entry"
-msgstr "??nregistrare"
+msgstr "Înregistrare"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
 msgid "Entry number"
-msgstr "Num??r ??nregistrare"
+msgstr "Număr înregistrare"
 
 #. module: account_financial_report
 #. odoo-javascript
@@ -786,7 +780,7 @@ msgstr "Export PDF"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 #: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
 msgid "Export XLSX"
-msgstr "Exporta??i XLSX"
+msgstr "Exportați XLSX"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__account_ids
@@ -800,17 +794,17 @@ msgstr "Contrui filtrate"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
 msgid "Filter analytic accounts"
-msgstr "Filtra??i conturile analitice"
+msgstr "Filtrați conturile analitice"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__cost_center_ids
 msgid "Filter cost centers"
-msgstr "Filtreaz?? centrele de cost"
+msgstr "Filtrează centrele de cost"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__account_journal_ids
 msgid "Filter journals"
-msgstr "Filtreaz?? Jurnale"
+msgstr "Filtrează Jurnale"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__partner_ids
@@ -832,7 +826,7 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__foreign_currency
 msgid "Foreign Currency"
-msgstr "Moned?? str??in??"
+msgstr "Monedă străină"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
@@ -924,7 +918,7 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__group_option
 msgid "Group entries by"
-msgstr "Intr??ri de grup dup??"
+msgstr "Intrări de grup după"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__grouped_by
@@ -964,7 +958,7 @@ msgstr "Ascunde conturile cu zero"
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy_level
 msgid "Hierarchy Levels to display"
-msgstr "Niveluri Ierahie de afi??at"
+msgstr "Niveluri Ierahie de afișat"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__id
@@ -1002,16 +996,14 @@ msgstr ""
 msgid ""
 "Initial\n"
 "                        balance cur."
-msgstr "Sold ini??ial"
+msgstr "Sold inițial"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
 msgid ""
 "Initial\n"
 "                    balance"
-msgstr ""
-"Sold \n"
-"ini??ial"
+msgstr "Sold \ninițial"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1019,7 +1011,7 @@ msgstr ""
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
 msgid "Initial balance"
-msgstr "Sold ini??ial"
+msgstr "Sold inițial"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__age_partner_config_id
@@ -1117,7 +1109,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__write_uid
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__write_uid
 msgid "Last Updated by"
-msgstr "Ultima dat?? actualizat de"
+msgstr "Ultima dată actualizat de"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__write_date
@@ -1149,7 +1141,7 @@ msgstr "Nivel %s"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__limit_hierarchy_level
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "Limit hierarchy levels"
-msgstr "Limita??i nivelurile de ierarhie"
+msgstr "Limitați nivelurile de ierarhie"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__line_ids
@@ -1184,12 +1176,12 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__move_target
 msgid "Move Target"
-msgstr "Mi??c??ri ??int??"
+msgstr "Mișcări țintă"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal
 msgid "Moves"
-msgstr "Mi??c??ri"
+msgstr "Mișcări"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1219,7 +1211,7 @@ msgstr ""
 #: code:addons/account_financial_report/report/vat_report_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
 msgid "Net"
-msgstr "Brut"
+msgstr "Net"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1241,7 +1233,7 @@ msgstr "Niciun grup"
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "No limit"
-msgstr "Nicio limit??"
+msgstr "Nicio limită"
 
 #. module: account_financial_report
 #: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__grouped_by__none
@@ -1290,22 +1282,22 @@ msgstr ""
 #: model:ir.actions.report,name:account_financial_report.action_print_report_open_items_qweb
 #: model:ir.ui.menu,name:account_financial_report.menu_open_items_wizard
 msgid "Open Items"
-msgstr "Pozi??ii deschise"
+msgstr "Poziții deschise"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_base
 msgid "Open Items -"
-msgstr "Pozi??ii deschise -"
+msgstr "Poziții deschise -"
 
 #. module: account_financial_report
 #: model:ir.actions.act_window,name:account_financial_report.act_action_open_items_wizard_partner_relation
 msgid "Open Items Partner"
-msgstr "Pozi??ii deschise partener"
+msgstr "Poziții deschise partener"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_open_items
 msgid "Open Items Report"
-msgstr "Deschide??i raportul de articole"
+msgstr "Deschideți raportul de articole"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_open_items_report_wizard
@@ -1320,12 +1312,12 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_a_f_r_report_open_items_xlsx
 msgid "Open Items XLSX Report"
-msgstr "Deschide??i raprortul XLSX de articole"
+msgstr "Deschideți raprortul XLSX de articole"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
 msgid "Options"
-msgstr "Op??iuni"
+msgstr "Opțiuni"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1361,7 +1353,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 msgid "Partner Initial balance"
-msgstr "Sold ini??ial partener"
+msgstr "Sold inițial partener"
 
 #. module: account_financial_report
 #: model:ir.model.fields.selection,name:account_financial_report.selection__open_items_report_wizard__grouped_by__salesperson
@@ -1400,7 +1392,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__payable_accounts_only
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__payable_accounts_only
 msgid "Payable Accounts Only"
-msgstr "Numai conturi de pl??tit"
+msgstr "Numai conturi de plătit"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_account_ending_cumul
@@ -1438,7 +1430,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__receivable_accounts_only
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__receivable_accounts_only
 msgid "Receivable Accounts Only"
-msgstr "Numai conturi de ??ncasat"
+msgstr "Numai conturi de încasat"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
@@ -1453,7 +1445,7 @@ msgstr ""
 msgid ""
 "Ref -\n"
 "                    Label"
-msgstr "Referin????"
+msgstr "Referință"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1468,7 +1460,7 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_ir_actions_report
 msgid "Report Action"
-msgstr "Raporta??i ac??iunea"
+msgstr "Raportați acțiunea"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1485,7 +1477,7 @@ msgstr "Rezidual"
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "Sequence"
-msgstr "Secven????"
+msgstr "Secvență"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1496,12 +1488,12 @@ msgstr "Secven????"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "Show"
-msgstr "Afi??are"
+msgstr "Afișare"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__show_cost_center
 msgid "Show Analytic Account"
-msgstr "Afi??a??i contul analitic"
+msgstr "Afișați contul analitic"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_auto_sequence
@@ -1511,13 +1503,13 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__show_move_line_details
 msgid "Show Move Line Details"
-msgstr "Afi??a??i detaliile liniei de mi??care"
+msgstr "Afișați detaliile liniei de mișcare"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__show_partner_details
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_partner_details
 msgid "Show Partner Details"
-msgstr "Afi??a??i detaliile partenerului"
+msgstr "Afișați detaliile partenerului"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1528,7 +1520,7 @@ msgstr "Afi??a??i detaliile partenerului"
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__foreign_currency
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__foreign_currency
 msgid "Show foreign currency"
-msgstr "Afi??a??i moned?? str??in??"
+msgstr "Afișați monedă străină"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy
@@ -1538,24 +1530,24 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__sort_option
 msgid "Sort entries by"
-msgstr "Sorta??i intr??rile dup??"
+msgstr "Sortați intrările după"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__date_from
 msgid "Start Date"
-msgstr "Dat?? start"
+msgstr "Dată start"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__date_from
 msgid "Start date"
-msgstr "Dat?? start"
+msgstr "Dată start"
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_aged_partner_balance_report_wizard__account_code_from
 #: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__account_code_from
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__account_code_from
 msgid "Starting account in a range"
-msgstr "Contul de pornire ??ntr-un interval"
+msgstr "Contul de pornire într-un interval"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1576,7 +1568,7 @@ msgstr "Etichete"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__target_move
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__target_move
 msgid "Target Moves"
-msgstr "Mi??c??ri ??int??"
+msgstr "Mișcări țintă"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1597,13 +1589,13 @@ msgstr ""
 #: code:addons/account_financial_report/report/vat_report_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
 msgid "Tax"
-msgstr "Tax??"
+msgstr "Taxă"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 msgid "Tax Amount"
-msgstr "Valoare tax??"
+msgstr "Valoare taxă"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1692,7 +1684,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
 msgid "The hierarchy level to filter on must be greater than 0."
-msgstr "Nivelul de ierarhie de filtrat trebuie s?? fie mai mare de 0."
+msgstr "Nivelul de ierarhie de filtrat trebuie să fie mai mare de 0."
 
 #. module: account_financial_report
 #. odoo-python
@@ -1734,17 +1726,17 @@ msgstr "Total"
 #: model:ir.actions.report,name:account_financial_report.action_report_trial_balance_qweb
 #: model:ir.ui.menu,name:account_financial_report.menu_trial_balance_wizard
 msgid "Trial Balance"
-msgstr "Balan???? verificare"
+msgstr "Balanță verificare"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_base
 msgid "Trial Balance -"
-msgstr "Balan???? verificare"
+msgstr "Balanță verificare"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_trial_balance
 msgid "Trial Balance Report"
-msgstr "Raport Balan???? verificare"
+msgstr "Raport Balanță verificare"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_trial_balance_report_wizard
@@ -1760,7 +1752,7 @@ msgstr ""
 #: model:ir.model,name:account_financial_report.model_report_a_f_r_report_trial_balance_xlsx
 #, fuzzy
 msgid "Trial Balance XLSX Report"
-msgstr "Balan???? verificare"
+msgstr "Balanță verificare"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
@@ -1782,10 +1774,7 @@ msgid ""
 "Use this filter to hide an account or a partner with an ending balance at 0. "
 "If partners are filtered, debits and credits totals will not match the trial "
 "balance."
-msgstr ""
-"Utiliza??i acest filtru pentru a ascunde un cont sau un partener cu un sold "
-"final la 0. Dac?? partenerii sunt filtra??i, totalele de debitelor ??i "
-"creditelor nu vor corespunde soldului de prob??."
+msgstr "Utilizați acest filtru pentru a ascunde un cont sau un partener cu un sold final la 0. Dacă partenerii sunt filtrați, totalele de debitelor și creditelor nu vor corespunde soldului de probă."
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__show_hierarchy
@@ -1809,7 +1798,7 @@ msgstr "Raport TVA"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
 msgid "VAT Report Options"
-msgstr "Op??iuni raport TVA"
+msgstr "Opțiuni raport TVA"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_vat_report_wizard
@@ -1847,16 +1836,14 @@ msgstr "Raport TVA  XLSX"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 #: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
 msgid "View"
-msgstr "Afi??are"
+msgstr "Afișare"
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_0
 msgid ""
 "When this option is enabled, the trial balance will not display accounts "
 "that have initial balance = debit = credit = end balance = 0"
-msgstr ""
-"C??nd aceast?? op??iune este activat??, soldul de prob?? nu va afi??a "
-"conturi care au sold ini??ial = debit = credit = sold final = 0"
+msgstr "Când această opțiune este activată, soldul de probă nu va afișa conturi care au sold inițial = debit = credit = sold final = 0"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_account_name
@@ -1911,12 +1898,12 @@ msgstr ""
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.24%;"
-msgstr "l????ime: 23,24%;"
+msgstr "width: 23.24%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.78%;"
-msgstr "l????ime: 23,78%;"
+msgstr "width: 23.78%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
@@ -1926,12 +1913,12 @@ msgstr ""
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 38.92%;"
-msgstr "l????ime: 38,92%;"
+msgstr "width: 38.92%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 8.11%;"
-msgstr "l????ime: 8,11%;"
+msgstr "width: 8.11%;"
 
 #~ msgid "10"
 #~ msgstr "10"

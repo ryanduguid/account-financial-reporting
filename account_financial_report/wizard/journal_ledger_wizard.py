@@ -164,6 +164,6 @@ class JournalLedgerReportWizard(models.TransientModel):
             if isinstance(list(data.keys())[0], int):
                 return data.get(obj_id, False)
             else:
-                return data.get(obj_id(obj_id), False)
+                return data.get(str(obj_id), False)
         else:
             return False
