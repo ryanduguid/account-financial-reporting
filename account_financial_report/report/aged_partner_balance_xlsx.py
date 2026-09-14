@@ -94,6 +94,15 @@ class AgedPartnerBalanceXslx(models.AbstractModel):
                 "width": 14,
             }
             column_index += 1
+        if report.age_partner_config_id:
+            report_columns[column_index] = {
+                "header": self.env._("Older"),
+                "field": "older",
+                "field_footer_total": "older",
+                "field_footer_percent": "percent_older",
+                "type": "amount",
+                "width": 14,
+            }
         return report_columns
 
     def _get_report_columns_with_move_line_details(self, report, column_index):
@@ -183,6 +192,16 @@ class AgedPartnerBalanceXslx(models.AbstractModel):
                 "width": 14,
             }
             column_index += 1
+        if report.age_partner_config_id:
+            report_columns[column_index] = {
+                "header": self.env._("Older"),
+                "field": "older",
+                "field_footer_total": "older",
+                "field_footer_percent": "percent_older",
+                "field_final_balance": "older",
+                "type": "amount",
+                "width": 14,
+            }
         return report_columns
 
     def _get_report_columns(self, report):

@@ -14,8 +14,9 @@ Example of configuration inferior limit:
 -> 30
 -> 60
 
-It means the first interval is from 0 to 15, the second from 16 to 30,
-the third from 31 to 60, and the fourth is 61+.
+The configured overdue intervals are 1 to 15, 16 to 30 and 31 to 60 days.
+An Older column includes all balances overdue by 61 days or more, in both
+the HTML and XLSX reports. Current balances appear separately.
 
 Go on 'Invoicing' -> 'Reporting' -> 'OCA accounting reports' -> 'Aged Partner Balance'
 

@@ -69,7 +69,7 @@ class AgedPartnerBalanceReport(models.AbstractModel):
         elif today <= due_date + timedelta(days=120):
             ag_pb_data[acc_id]["120_days"] += residual
             ag_pb_data[acc_id][prt_id]["120_days"] += residual
-        else:
+        elif not interval_lines:
             ag_pb_data[acc_id]["older"] += residual
             ag_pb_data[acc_id][prt_id]["older"] += residual
 
@@ -87,6 +87,10 @@ class AgedPartnerBalanceReport(models.AbstractModel):
                 ag_pb_data[acc_id][line] += residual
                 ag_pb_data[acc_id][prt_id][line] += residual
                 break
+        else:
+            if interval_lines and days_difference:
+                ag_pb_data[acc_id]["older"] += residual
+                ag_pb_data[acc_id][prt_id]["older"] += residual
         return ag_pb_data
 
     def _get_values_for_range_intervals(self, num1, num2):
@@ -280,7 +284,7 @@ class AgedPartnerBalanceReport(models.AbstractModel):
             ml["90_days"] += amount
         elif today <= due_date + timedelta(days=120):
             ml["120_days"] += amount
-        else:
+        elif not interval_lines:
             ml["older"] += amount
         if due_date:
             days_difference = abs((today - due_date).days)
@@ -300,6 +304,9 @@ class AgedPartnerBalanceReport(models.AbstractModel):
                 ):
                     ml[interval_line] += amount
                     break
+            else:
+                if interval_lines and days_difference:
+                    ml["older"] += amount
 
     def _create_account_list(
         self,
