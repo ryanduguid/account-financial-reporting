@@ -177,6 +177,11 @@ class TestOutstandingStatement(TransactionCase):
         due_invoice = self.init_invoice(
             "out_invoice", partner, invoice_date=today + relativedelta(months=1)
         )
+        boundary_invoice = self.init_invoice("out_invoice", partner, invoice_date=today)
+        boundary_invoice.line_ids.filtered(
+            lambda line: line.account_id.account_type == "asset_receivable"
+        ).date_maturity = today
+        self.env.flush_all()
 
         wizard = self.wiz.with_context(
             active_ids=partner.ids,
@@ -200,4 +205,13 @@ class TestOutstandingStatement(TransactionCase):
         partner_move_lines = partner_data[overdue_invoice.currency_id.id]["lines"]
         moves_names = [line["name"] for line in partner_move_lines]
         self.assertNotIn(due_invoice.name, moves_names)
+        self.assertNotIn(boundary_invoice.name, moves_names)
         self.assertIn(overdue_invoice.name, moves_names)
+        wizard.show_only_overdue = False
+        report = self.statement_model._get_report_values(
+            partner.ids, wizard._prepare_statement()
+        )
+        lines = report["data"][partner.id]["currencies"][
+            boundary_invoice.currency_id.id
+        ]["lines"]
+        self.assertIn(boundary_invoice.name, [line["name"] for line in lines])

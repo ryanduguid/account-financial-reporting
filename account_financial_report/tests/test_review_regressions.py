@@ -1,5 +1,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 import io
+from copy import deepcopy
 from datetime import date, timedelta
 from unittest.mock import patch
 
@@ -155,3 +156,44 @@ class TestReportRegressions(TransactionCase):
         self.assertEqual(
             {row["name"]: row["tax"] for row in result}, {"Invoice": 10, "Refund": -4}
         )
+
+    def test_zero_closing_balance_filter_includes_active_accounts(self):
+        report = self.env["report.account_financial_report.general_ledger"]
+        details = {
+            1: {
+                "code": "1000",
+                "name": "Synthetic",
+                "currency_id": False,
+                "centralized": False,
+            }
+        }
+        for grouped in (False, True):
+            for closing in (0, 25):
+                row = {
+                    "init_bal": {"balance": 0},
+                    "fin_bal": {"balance": closing},
+                    101: {"date": date(2026, 9, 1), "balance": 100, "rec_id": False},
+                    102: {
+                        "date": date(2026, 9, 2),
+                        "balance": closing - 100,
+                        "rec_id": False,
+                    },
+                }
+                data = {1: {"partner_ids": grouped, **deepcopy(row)}}
+                if grouped:
+                    data = {
+                        1: {
+                            "partner_ids": True,
+                            "init_bal": {"balance": 0},
+                            "fin_bal": {"balance": closing},
+                            9: row,
+                        }
+                    }
+                for enabled in (False, True):
+                    with self.subTest(
+                        grouped=grouped, closing=closing, enabled=enabled
+                    ):
+                        result = report._create_general_ledger(
+                            deepcopy(data), details, "partner_ids", [], enabled
+                        )
+                        self.assertEqual(bool(result), not enabled or closing != 0)

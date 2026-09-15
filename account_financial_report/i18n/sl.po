@@ -1294,7 +1294,7 @@ msgstr "Starejše"
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__only_one_unaffected_earnings_account
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__only_one_unaffected_earnings_account
 msgid "Only One Unaffected Earnings Account"
-msgstr "Le en konto bruto dobička"
+msgstr "Le en konto dohodkov v tekočem letu"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1791,15 +1791,13 @@ msgstr "Bruto bilanca XLSX poročilo"
 msgid ""
 "Trial Balance can be computed only if selected company have only\n"
 "                        one unaffected earnings account."
-msgstr ""
-"Bruto bilanca bo obdelana le, če ima izbrana družba le\n"
-"                        en konto bruto dobička."
+msgstr "Bruto bilanca bo obdelana le, če ima izbrana družba le\n                        en konto dohodkov v tekočem letu."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__unaffected_earnings_account
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__unaffected_earnings_account
 msgid "Unaffected Earnings Account"
-msgstr "Konto bruto dobička"
+msgstr "Konto dohodkov v tekočem letu"
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0

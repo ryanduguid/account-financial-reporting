@@ -232,7 +232,7 @@ msgstr "Nome"
 #. module: mis_builder_cash_flow
 #: model:mis.report.kpi,description:mis_builder_cash_flow.mis_kpi_out_total
 msgid "OUT TOTAL"
-msgstr "FORA DO TOTAL"
+msgstr "TOTAL DE SAÍDAS"
 
 #. module: mis_builder_cash_flow
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_tree_view
