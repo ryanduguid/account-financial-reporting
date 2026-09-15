@@ -25,7 +25,7 @@ msgstr "Dovoli vodoravno"
 #. module: mis_template_financial_report
 #: model:mis.report.kpi,description:mis_template_financial_report.kpi_assets
 msgid "Assets"
-msgstr "Osnovna sredstva"
+msgstr "Sredstva"
 
 #. module: mis_template_financial_report
 #: model:mis.report,name:mis_template_financial_report.report_bs

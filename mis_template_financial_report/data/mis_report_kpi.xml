@@ -2,7 +2,7 @@
     <!-- profit & loss -->
     <record id="kpi_profit" model="mis.report.kpi">
         <field name="name">profit</field>
-        <field name="description">Profit</field>
+        <field name="description">Income</field>
         <field name="expression">-balp[('account_type', 'like', 'income%')][]</field>
         <field name="auto_expand_accounts">true</field>
         <field name="auto_expand_accounts_style_id" ref="style_details" />
@@ -16,7 +16,7 @@
     </record>
     <record id="kpi_loss" model="mis.report.kpi">
         <field name="name">loss</field>
-        <field name="description">Loss</field>
+        <field name="description">Expenses</field>
         <field name="expression">balp[('account_type', 'like', 'expense%')][]</field>
         <field name="auto_expand_accounts">true</field>
         <field name="auto_expand_accounts_style_id" ref="style_details" />

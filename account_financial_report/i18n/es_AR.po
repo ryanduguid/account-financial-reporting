@@ -116,7 +116,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__account_code_from
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__account_code_from
 msgid "Account Code From"
-msgstr "C??digo de Cuenta de"
+msgstr "Código de Cuenta de"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__account_code_to
@@ -124,7 +124,7 @@ msgstr "C??digo de Cuenta de"
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__account_code_to
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__account_code_to
 msgid "Account Code To"
-msgstr "C??digo de Cuenta Para"
+msgstr "Código de Cuenta Para"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_account_group
@@ -161,7 +161,7 @@ msgstr "Cuentas"
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__centralize
 msgid "Activate centralization"
-msgstr "Activar centralizaci??n"
+msgstr "Activar centralización"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
@@ -332,7 +332,7 @@ msgstr "Total Act."
 #: model:ir.model.fields,field_description:account_financial_report.field_account_move_line__analytic_account_ids
 #: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__grouped_by__analytic_account
 msgid "Analytic Account"
-msgstr "Cuenta Anal??tica"
+msgstr "Cuenta Analítica"
 
 #. module: account_financial_report
 #. odoo-python
@@ -417,7 +417,7 @@ msgstr "Grupos Hijos"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
 msgid "Code"
-msgstr "C??digo"
+msgstr "Código"
 
 #. module: account_financial_report
 #. odoo-python
@@ -431,7 +431,7 @@ msgstr "C??digo"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__company_id
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__company_id
 msgid "Company"
-msgstr "Compa????a"
+msgstr "Compañía"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_group__compute_account_ids
@@ -483,7 +483,7 @@ msgstr "Creado en"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
 msgid "Credit"
-msgstr "Cr??dito"
+msgstr "Crédito"
 
 #. module: account_financial_report
 #. odoo-python
@@ -620,7 +620,7 @@ msgstr "Hasta"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
 msgid "Debit"
-msgstr "D??bito"
+msgstr "Débito"
 
 #. module: account_financial_report
 #. odoo-python
@@ -628,7 +628,7 @@ msgstr "D??bito"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 msgid "Description"
-msgstr "Descripci??n"
+msgstr "Descripción"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__tax_detail
@@ -655,10 +655,7 @@ msgid ""
 "Display foreign currency for move lines, unless account currency is not "
 "setup through chart of accounts will display initial and final balance in "
 "that currency."
-msgstr ""
-"Mostrar moneda extranjera para l??neas de movimiento contable, a menos que "
-"la moneda de la cuenta no est?? configurada a trav??s del plan de cuentas "
-"mostrar?? el saldo inicial y final en esa moneda."
+msgstr "Mostrar moneda extranjera para líneas de movimiento contable, a menos que la moneda de la cuenta no esté configurada a través del plan de cuentas mostrará el saldo inicial y final en esa moneda."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_parent_hierarchy_level
@@ -759,7 +756,7 @@ msgstr "Asiento"
 #. odoo-python
 #: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
 msgid "Entry number"
-msgstr "N??mero de asiento"
+msgstr "Número de asiento"
 
 #. module: account_financial_report
 #. odoo-javascript
@@ -799,7 +796,7 @@ msgstr "Filtro cuentas"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
 msgid "Filter analytic accounts"
-msgstr "Filtrar por cuentas anal??ticas"
+msgstr "Filtrar por cuentas analíticas"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__cost_center_ids
@@ -844,7 +841,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 msgid "From Code"
-msgstr "Desde C??digo"
+msgstr "Desde Código"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
@@ -863,7 +860,7 @@ msgstr "Desde: %(date_from)s Hasta: %(date_to)s"
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_group__complete_code
 msgid "Full Code"
-msgstr "C??digo Completo"
+msgstr "Código Completo"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_group__complete_name
@@ -964,7 +961,7 @@ msgstr "Ocultar cuentas a 0"
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy_level
 msgid "Hierarchy Levels to display"
-msgstr "Niveles de Jerarqu??a a mostrar"
+msgstr "Niveles de Jerarquía a mostrar"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__id
@@ -983,9 +980,7 @@ msgstr "ID"
 msgid ""
 "If flagged, no details will be displayed in the General Ledger report (the "
 "webkit one only), only centralized amounts per period."
-msgstr ""
-"Si se marca, no se mostrar??n detalles en el informe del libro mayor (solo "
-"el webkit), solo importes centralizados por per??odo."
+msgstr "Si se marca, no se mostrarán detalles en el informe del libro mayor (solo el webkit), solo importes centralizados por período."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration_line__inferior_limit
@@ -1116,7 +1111,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__write_uid
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__write_uid
 msgid "Last Updated by"
-msgstr "??ltima modificaci??n por"
+msgstr "Última modificación por"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__write_date
@@ -1128,7 +1123,7 @@ msgstr "??ltima modificaci??n por"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__write_date
 #: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__write_date
 msgid "Last Updated on"
-msgstr "??ltima actualizaci??n en"
+msgstr "Última actualización en"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_group__level
@@ -1148,7 +1143,7 @@ msgstr "Nivel %s"
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__limit_hierarchy_level
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "Limit hierarchy levels"
-msgstr "Limitar niveles de jerarqu??a"
+msgstr "Limitar niveles de jerarquía"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_age_report_configuration__line_ids
@@ -1240,7 +1235,7 @@ msgstr "Sin grupo"
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
 msgid "No limit"
-msgstr "Sin l??mite"
+msgstr "Sin límite"
 
 #. module: account_financial_report
 #: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__grouped_by__none
@@ -1256,7 +1251,7 @@ msgstr "Sin Postear"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
 msgid "Not due"
-msgstr "Deuda"
+msgstr "No vencido"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.res_config_settings_view_form
@@ -1401,7 +1396,7 @@ msgstr "Contactos"
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__payable_accounts_only
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__payable_accounts_only
 msgid "Payable Accounts Only"
-msgstr "S??lo cuentas a pagar"
+msgstr "Sólo cuentas a pagar"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_account_ending_cumul
@@ -1439,7 +1434,7 @@ msgstr "Num."
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__receivable_accounts_only
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__receivable_accounts_only
 msgid "Receivable Accounts Only"
-msgstr "S??lo cuentas a cobrar"
+msgstr "Sólo cuentas a cobrar"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
@@ -1473,7 +1468,7 @@ msgstr "Referencia"
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_ir_actions_report
 msgid "Report Action"
-msgstr "Acci??n de Informe"
+msgstr "Acción de Informe"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1506,12 +1501,12 @@ msgstr "Mostrar"
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__show_cost_center
 msgid "Show Analytic Account"
-msgstr "Mostrar Cuenta Anal??tica"
+msgstr "Mostrar Cuenta Analítica"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_auto_sequence
 msgid "Show Auto Sequence"
-msgstr "Mostrar Secuencia Autom??tica"
+msgstr "Mostrar Secuencia Automática"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__show_move_line_details
@@ -1620,13 +1615,13 @@ msgstr "Saldo de Impuestos"
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Tax Credit"
-msgstr "Impuesto Cr??dito"
+msgstr "Impuesto Crédito"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 msgid "Tax Debit"
-msgstr "Impuesto D??bito"
+msgstr "Impuesto Débito"
 
 #. module: account_financial_report
 #. odoo-python
@@ -1686,9 +1681,7 @@ msgstr ""
 msgid ""
 "The Company in the Trial Balance Report Wizard and in Date Range must be the "
 "same."
-msgstr ""
-"La empresa en el Asistente de informe de Balance de comprobaci??n y en rango "
-"de fechas debe ser la misma."
+msgstr "La empresa en el Asistente de informe de Balance de comprobación y en rango de fechas debe ser la misma."
 
 #. module: account_financial_report
 #. odoo-python
@@ -1703,7 +1696,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
 msgid "The hierarchy level to filter on must be greater than 0."
-msgstr "El nivel de jerarqu??a a filtrar debe ser mayor que 0."
+msgstr "El nivel de jerarquía a filtrar debe ser mayor que 0."
 
 #. module: account_financial_report
 #. odoo-python
@@ -1716,9 +1709,7 @@ msgstr ""
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__domain
 msgid "This domain will be used to select specific domain for Journal Items"
-msgstr ""
-"Este dominio se utilizar?? para seleccionar un dominio espec??fico para los "
-"Apuntes Contables"
+msgstr "Este dominio se utilizará para seleccionar un dominio específico para los Apuntes Contables"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
@@ -1755,7 +1746,7 @@ msgstr "Balance de Sumas y Saldos -"
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_trial_balance
 msgid "Trial Balance Report"
-msgstr "Informe de Balance de Comprobaci??n"
+msgstr "Informe de Balance de Comprobación"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_trial_balance_report_wizard
@@ -1770,7 +1761,7 @@ msgstr "Balance de Sumas y Saldos XLSX"
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_a_f_r_report_trial_balance_xlsx
 msgid "Trial Balance XLSX Report"
-msgstr "Informe XLSX del Balance de Comprobaci??n"
+msgstr "Informe XLSX del Balance de Comprobación"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
@@ -1795,10 +1786,7 @@ msgid ""
 "Use this filter to hide an account or a partner with an ending balance at 0. "
 "If partners are filtered, debits and credits totals will not match the trial "
 "balance."
-msgstr ""
-"Use este filtro para ocultar las cuentas o empresas con saldo final 0. Si "
-"las empresas se filtran, los debe y haber totales no coincidir??n con el "
-"balance de sumas y saldos."
+msgstr "Use este filtro para ocultar las cuentas o empresas con saldo final 0. Si las empresas se filtran, los debe y haber totales no coincidirán con el balance de sumas y saldos."
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__show_hierarchy
@@ -1864,9 +1852,7 @@ msgstr "Vista"
 msgid ""
 "When this option is enabled, the trial balance will not display accounts "
 "that have initial balance = debit = credit = end balance = 0"
-msgstr ""
-"Cuando habilite esta opci??n el balance de sumas y saldos no va a mostrar "
-"cuentas que tengan saldo inicial = d??bito = cr??dito = saldo final = 0"
+msgstr "Cuando habilite esta opción el balance de sumas y saldos no va a mostrar cuentas que tengan saldo inicial = débito = crédito = saldo final = 0"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_account_name
@@ -1916,32 +1902,32 @@ msgstr "a"
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 16.21%;"
-msgstr "ancho: 16.21%;"
+msgstr "width: 16.21%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.24%;"
-msgstr "ancho: 23.24%;"
+msgstr "width: 23.24%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 23.78%;"
-msgstr "ancho: 23.78%;"
+msgstr "width: 23.78%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 31.35%;"
-msgstr "ancho: 31.35%;"
+msgstr "width: 31.35%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 38.92%;"
-msgstr "ancho: 38.92%;"
+msgstr "width: 38.92%;"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
 msgid "width: 8.11%;"
-msgstr "ancho: 8.11%;"
+msgstr "width: 8.11%;"
 
 #~ msgid "10"
 #~ msgstr "10"

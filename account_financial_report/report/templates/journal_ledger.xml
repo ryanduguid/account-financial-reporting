@@ -92,30 +92,30 @@
     </template>
     <template id="account_financial_report.report_journal_ledger_journal_table_header">
         <t t-if="not display_account_name">
-            <t t-set="account_column_style">width: 8.11%;</t>
+            <t t-set="account_column_style" t-translation="off">width: 8.11%;</t>
             <t t-if="not with_auto_sequence">
-                <t t-set="label_column_style">
+                <t t-set="label_column_style" t-translation="off">
                     width: 38.92%;
                 </t>
             </t>
             <t t-else="">
-                <t t-set="label_column_style">
+                <t t-set="label_column_style" t-translation="off">
                     width: 31.35%;
                 </t>
             </t>
         </t>
         <t t-else="">
             <t t-if="not with_auto_sequence">
-                <t t-set="account_column_style">
+                <t t-set="account_column_style" t-translation="off">
                     width: 23.78%;
                 </t>
             </t>
             <t t-else="">
-                <t t-set="account_column_style">
+                <t t-set="account_column_style" t-translation="off">
                     width: 16.21%;
                 </t>
             </t>
-            <t t-set="label_column_style">width: 23.24%;</t>
+            <t t-set="label_column_style" t-translation="off">width: 23.24%;</t>
         </t>
         <div class="act_as_thead">
             <div class="act_as_row labels">

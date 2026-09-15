@@ -653,13 +653,9 @@ class GeneralLedgerReport(models.AbstractModel):
                     rec_after_date_to_ids,
                 )
                 group_item.update({"move_lines": move_lines})
-                if (
-                    hide_account_at_0
-                    and float_is_zero(
-                        data[data_id]["init_bal"]["balance"],
-                        precision_rounding=rounding,
-                    )
-                    and group_item["move_lines"] == []
+                if hide_account_at_0 and float_is_zero(
+                    data[data_id]["fin_bal"]["balance"],
+                    precision_rounding=rounding,
                 ):
                     continue
                 list_grouped += [group_item]
@@ -691,13 +687,9 @@ class GeneralLedgerReport(models.AbstractModel):
                 account = self._create_account(
                     account, acc_id, gen_led_data, rec_after_date_to_ids
                 )
-                if (
-                    hide_account_at_0
-                    and float_is_zero(
-                        gen_led_data[acc_id]["init_bal"]["balance"],
-                        precision_rounding=rounding,
-                    )
-                    and account["move_lines"] == []
+                if hide_account_at_0 and float_is_zero(
+                    gen_led_data[acc_id]["fin_bal"]["balance"],
+                    precision_rounding=rounding,
                 ):
                     continue
             else:
@@ -709,13 +701,9 @@ class GeneralLedgerReport(models.AbstractModel):
                     rounding,
                 )
                 account.update({"list_grouped": list_grouped})
-                if (
-                    hide_account_at_0
-                    and float_is_zero(
-                        gen_led_data[acc_id]["init_bal"]["balance"],
-                        precision_rounding=rounding,
-                    )
-                    and account["list_grouped"] == []
+                if hide_account_at_0 and float_is_zero(
+                    gen_led_data[acc_id]["fin_bal"]["balance"],
+                    precision_rounding=rounding,
                 ):
                     continue
             general_ledger += [account]

@@ -611,7 +611,7 @@ msgstr "Datumreeks filter"
 #. odoo-python
 #: code:addons/account_financial_report/report/vat_report_xlsx.py:0
 msgid "Date to"
-msgstr "Datum vanaf"
+msgstr "Datum tot"
 
 #. module: account_financial_report
 #. odoo-python

@@ -243,7 +243,7 @@ msgstr "Sold total"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__base_balance
 msgid "Total Base Balance"
-msgstr "Solt total inițial"
+msgstr "Sold total al bazei"
 
 #. module: account_tax_balance
 #. odoo-python
