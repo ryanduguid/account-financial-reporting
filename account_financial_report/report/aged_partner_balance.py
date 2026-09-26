@@ -98,7 +98,7 @@ class AgedPartnerBalanceReport(models.AbstractModel):
         max_num = max(num1, num2)
         if abs(num2 - num1) == 1:
             return [max_num]
-        return list(range(min_num + 1, max_num))
+        return range(min_num + 1, max_num)
 
     def _get_account_partial_reconciled(self, company_id, date_at_object):
         domain = [("max_date", ">", date_at_object), ("company_id", "=", company_id)]
