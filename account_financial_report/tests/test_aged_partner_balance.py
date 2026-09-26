@@ -91,12 +91,14 @@ class TestAgedPartnerBalance(TransactionCase):
                     report._calculate_amounts(data, 1, 2, residual, due_date, date_at)
                     move_line = {"due_date": due_date, "residual": residual}
                     report._compute_maturity_date(move_line, date_at)
+                    expected_values = dict.fromkeys(
+                        ["current", "older", *intervals], 0.0
+                    )
+                    expected_values[bucket] = residual
                     for values in (data[1], data[1][2], move_line):
                         self.assertEqual(values["residual"], residual)
-                        for key in ["current", "older", *intervals]:
-                            self.assertEqual(
-                                values[key], residual if key == bucket else 0
-                            )
+                        for key, expected in expected_values.items():
+                            self.assertEqual(values[key], expected)
 
     def test_report_without_aged_report_configuration(self):
         """Check that report is produced correctly."""
