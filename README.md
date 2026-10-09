@@ -9,6 +9,12 @@
 
 # account-financial-reporting
 
+**Fork status**
+
+[![Fork code quality](https://app.codacy.com/project/badge/Grade/f7aeb43ed4534a4fa64c311aa579f7ba?branch=18.0)](https://app.codacy.com/gh/ryanduguid/account-financial-reporting/dashboard)
+[![Fork tests](https://github.com/ryanduguid/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/ryanduguid/account-financial-reporting/actions/workflows/test.yml)
+[![Fork pre-commit](https://github.com/ryanduguid/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/ryanduguid/account-financial-reporting/actions/workflows/pre-commit.yml)
+
 account-financial-reporting
 
 <!-- /!\ do not modify below this line -->
