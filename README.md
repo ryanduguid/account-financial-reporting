@@ -9,6 +9,9 @@
 
 # account-financial-reporting
 
+The badges above refer to
+[upstream OCA/account-financial-reporting](https://github.com/OCA/account-financial-reporting).
+
 **Fork status**
 
 [![Fork code quality](https://app.codacy.com/project/badge/Grade/f7aeb43ed4534a4fa64c311aa579f7ba?branch=18.0)](https://app.codacy.com/gh/ryanduguid/account-financial-reporting/dashboard)
